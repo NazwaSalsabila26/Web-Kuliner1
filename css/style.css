@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 5);
+    z-index: 1000;
+}
+
+section nav .logo img{
+    width: 120px;
+    cursor: pointer;
+    margin: 5 0;
+}
+
+section .nav_nm{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 1 1rem;
+   
+}
+section .logo_nm a{
+    color: #db5e34;
+    text-decoration: none;
+    position: relative;
+    right: 340px;
+    margin: 40px;
+    font-size: 20px;
+    font-weight: 800;
+    text-shadow: 0 0 4px #fff; 
+    font-family:'mv boli';
+}
+
+
+section nav ul{
+    list-style: none;
+}
+
+section nav ul li{
+    display: inline-block;
+    margin: 0 30px;
+}
+
+section nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+    font-family: mv boli;
+}
+
+section nav ul li a::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #db5e34;
+    display: block;
+    transition: 0.2s linier;
+}
+
+section nav ul li a:hover::after{
+    width: 100%;
+}
+
+section nav ul li a:hover{
+    color: #db5e34;
+}
+
+.banner img{
+    width: 100%;
+    height: 85vh;
+    position: relative;
+    top: 70px;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+    
+}
+
+h1{
+    font-size: 70px;
+    text-align: center;
+    margin-top: 100px;
+    color: #db5e34;
+    font-weight: 700;
+    text-shadow: 0 0 4px #fff;
+    letter-spacing: 1px;
+    font-family:'mv boli';
+
+}
+
+h5{
+    text-align:justify;
+    margin-top: 10px;
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family:serif;
+    margin: 20px;
+}
+
+
+
+/*tahukuah*/
+
+section .main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 130px;
+}
+
+section .main .men_text h2{
+    font-size: 50px;
+    position: relative;
+    top: -135px;
+    left: 20px;
+}
+
+section .main .men_text h2 span{
+    margin-left: 15px;
+    color: #db5e34;
+    font-family: mv boli;
+    font-size: 60px;
+    line-height: 22px;
+}
+
+section .main .main_image img{
+    width: 600px;
+    position: relative;
+    left: 80px;
+    border-radius: 20px;
+}
+
+section p{
+    width: 480px;
+    text-align: justify;
+    position: relative;
+    left: 123;
+    bottom: 140px;
+    line-height: 22px;
+    margin: 22px;
+}
+
+
+
+
+/*misop*/
+
+section .about_main{
+    width: 100%;
+    height: 100vh;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #f5f5f5;
+    position: relative;
+    top: -120px;
+}
+
+section .about_main .about_image img{
+    width: 600px;
+    position: relative;
+    top: -10px;
+    border-radius: 20px;
+}
+
+section .about_main .about_text h2 span{
+    color: #db5e34;
+    margin-right: 30px;
+    font-family: mv boli;
+}
+
+section .about_main .about_text h2{
+    font-size: 50px;
+    position: relative;
+    top: 50px;
+    left: 20px;
+    margin-bottom: 40px;
+}
+
+section .about_main .about_text p{
+    width: 500px;
+    text-align: justify;
+    margin-right: 30px;
+    line-height: 22px;
+    bottom: 60px;
+
+}
+
+
+
+/*tahu*/
+
+section .tahu_main .tahu_text h2{
+    font-size: 50px;
+    position: relative;
+    top: -500px;
+    left: 180px;
+}
+
+section .tahu_main .tahu_text h2 span{
+    margin-left: 3px;
+    color: #db5e34;
+    font-family: mv boli;
+    font-size: 60px;
+    line-height: 15px;
+}
+
+section .tahu_main .tahu_image img{
+    width: 550px;
+    position: relative;
+    left: 690px;
+    top: -60px;
+    border-radius: 20px;
+}
+
+section .tahu_main .tahu_text p{
+    width: 600px;
+    text-align: justify;
+    position: relative;
+    left: 123;
+    bottom: 450px;
+    line-height: 22px;
+    margin: 22px;
+}
+
+
+
+
+/*bebek*/
+
+section .bebek_main{
+    width: 100%;
+    height: 100vh;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #f5f5f5;
+    position: relative;
+    top: -230px;
+}
+
+section .bebek_main .bebek_image img{
+    width:-60px;
+    height: -40px;
+    position: relative;
+    top: -50px;
+    left: 8px;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+section .bebek_main .bebek_text h2 span{
+    color: #db5e34;
+    margin-right: 30px;
+    font-family: mv boli;
+}
+
+section .bebek_main .bebek_text h2{
+    font-size: 50px;
+    position: relative;
+    top: -70px;
+    left: 20px;
+    margin-bottom: 40px;
+}
+
+section .bebek_main .bebek_text p{
+    width: 500px;
+    text-align: justify;
+    margin-right: 30px;
+    line-height: 22px;
+    bottom: 50px;
+
+}
+
+
+
+
+/*escampur*/
+
+section .escampur_main .escampur_text h2{
+    font-size: 50px;
+    position: relative;
+    top: -650px;
+    left: 180px;
+}
+
+section .escampur_main .escampur_text h2 span{
+    margin-left: 3px;
+    color: #db5e34;
+    font-family: mv boli;
+    font-size: 60px;
+    line-height: 15px;
+}
+
+section .escampur_main .escampur_image img{
+    width: 550px;
+    position: relative;
+    left: 690px;
+    top: -240px;
+    border-radius: 20px;
+}
+
+section .escampur_main .escampur_text p{
+    width: 600px;
+    text-align: justify;
+    position: relative;
+    left: 123;
+    bottom: 600px;
+    line-height: 22px;
+    margin: 22px;
+}
+
+
+/*gallery*/
+
+
+.our{
+    text-align: center;
+    padding: 5px;
+    color: #db5e34;
+    position: relative;
+    top: -250px;
+}
+
+.our h2{
+    font-size: 70px;
+    margin: 0px;
+    padding: 0px;
+    font-family: mv boli;
+}
+
+
+.gallery{
+    margin: 40px 0;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-gap: 30px;
+    position: relative;
+    top: -200px;
+    left: 15px;
+   
+ }
+ .gallery img{
+     width: 95%;
+     height: 280px;
+     object-fit: cover;
+     border: 1px solid #eee;
+     box-shadow: 1 2px 2px #ddd;
+     border-radius: 10px;
+     box-sizing: border-box;
+ }
+ 
+ /* RESPONSIVE */
+ @media(max-width: 768px){
+.gallery{
+         grid-template-columns: 1fr 1fr;
+     }
+ }
+.gallery img{
+     height: 170px;
+}
+
+
+
+
+/*footer*/
+
+section footer .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    right: -350px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section footer .end span{
+    color: #db5e34;
+    padding: 10px;
+    font-family: mv boli;
+}
